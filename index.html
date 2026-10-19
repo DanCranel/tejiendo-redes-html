@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tejiendo Redes, centro psicopedagógico en Paute, Azuay: control de tareas, clases personalizadas, creación de ensayos y edición y corrección de textos.">
+  <title>Tejiendo Redes | Centro Psicopedagógico</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span>Tejiendo <strong>Redes</strong></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-label">Menú</span>
+        </button>
+        <ul id="menu-principal" class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+          <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Sección 1: Presentación -->
+    <section id="inicio" class="hero" aria-labelledby="titulo-hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Centro Psicopedagógico · Paute, Azuay</p>
+          <h1 id="titulo-hero">Acompañamos el aprendizaje de tu familia</h1>
+          <p class="lead">Apoyo escolar y clases personalizadas para estudiantes de colegio, universitarios y adultos, con un trato cercano y humano.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/593984712983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener">Escríbenos por WhatsApp<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+            <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <picture>
+            <source type="image/webp" srcset="img/teji-familia-480.webp 480w, img/teji-familia-900.webp 900w" sizes="(min-width: 64em) 40vw, 100vw">
+            <img src="img/teji-familia-900.png" alt="Teji, la mascota de Tejiendo Redes: una familia de nutrias dándose un abrazo" width="900" height="673">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Sección 2: Servicios con filtro -->
+    <section id="servicios" class="section" aria-labelledby="titulo-servicios">
+      <div class="container">
+        <h2 id="titulo-servicios">Nuestros servicios</h2>
+        <p class="section-intro">Apoyo para estudiantes de colegio y para universitarios o adultos. Filtra según lo que necesitas.</p>
+
+        <div class="filter" role="group" aria-label="Filtrar servicios por público">
+          <button type="button" class="filter-btn" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filter-btn" data-filter="colegio" aria-pressed="false">Colegio</button>
+          <button type="button" class="filter-btn" data-filter="universidad" aria-pressed="false">Universidad y adultos</button>
+        </div>
+        <p class="visually-hidden" id="estado-filtro" role="status" aria-live="polite"></p>
+
+        <ul class="cards" id="lista-servicios">
+          <li class="card" data-nivel="colegio">
+            <img src="img/icon-tareas.svg" alt="" width="56" height="56">
+            <h3>Control de tareas</h3>
+            <p>Acompañamiento y seguimiento diario para que las tareas se cumplan a tiempo.</p>
+            <p class="tags"><span>Colegio</span></p>
+            <a class="card-link" href="https://wa.me/593984712983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Control%20de%20tareas." target="_blank" rel="noopener">Consultar por WhatsApp<span class="visually-hidden">: Control de tareas (se abre en una pestaña nueva)</span></a>
+          </li>
+          <li class="card" data-nivel="colegio universidad">
+            <img src="img/icon-clases.svg" alt="" width="56" height="56">
+            <h3>Clases personalizadas</h3>
+            <p>Clases uno a uno adaptadas al ritmo del estudiante: matemáticas, física, inglés y más.</p>
+            <p class="tags"><span>Colegio</span><span>Universidad</span></p>
+            <a class="card-link" href="https://wa.me/593984712983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20Clases%20personalizadas." target="_blank" rel="noopener">Consultar por WhatsApp<span class="visually-hidden">: Clases personalizadas (se abre en una pestaña nueva)</span></a>
+          </li>
+          <li class="card" data-nivel="universidad">
+            <img src="img/icon-ensayos.svg" alt="" width="56" height="56">
+            <h3>Creación de ensayos</h3>
+            <p>Apoyo para estructurar y desarrollar ensayos y trabajos académicos paso a paso.</p>
+            <p class="tags"><span>Universidad</span><span>Adultos</span></p>
+            <a class="card-link" href="https://wa.me/593984712983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Creaci%C3%B3n%20de%20ensayos." target="_blank" rel="noopener">Consultar por WhatsApp<span class="visually-hidden">: Creación de ensayos (se abre en una pestaña nueva)</span></a>
+          </li>
+          <li class="card" data-nivel="universidad">
+            <img src="img/icon-edicion.svg" alt="" width="56" height="56">
+            <h3>Edición y corrección</h3>
+            <p>Revisión de ortografía, redacción y formato para entregar textos claros y bien presentados.</p>
+            <p class="tags"><span>Universidad</span><span>Adultos</span></p>
+            <a class="card-link" href="https://wa.me/593984712983?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Edici%C3%B3n%20y%20correcci%C3%B3n." target="_blank" rel="noopener">Consultar por WhatsApp<span class="visually-hidden">: Edición y corrección (se abre en una pestaña nueva)</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección 3: Nosotros -->
+    <section id="nosotros" class="section section-alt" aria-labelledby="titulo-nosotros">
+      <div class="container about-grid">
+        <div>
+          <h2 id="titulo-nosotros">¿Por qué Tejiendo Redes?</h2>
+          <p>Tejer redes es crear vínculos de apoyo entre el estudiante, su familia y quienes le enseñan. Por eso nuestra mascota, Teji, es una familia de nutrias que nunca se suelta.</p>
+          <ol class="steps">
+            <li class="step">
+              <h3>Trato cercano</h3>
+              <p>Conocemos a cada estudiante y adaptamos el apoyo a sus necesidades.</p>
+            </li>
+            <li class="step">
+              <h3>Seguimiento constante</h3>
+              <p>Acompañamos el proceso y mantenemos informada a la familia.</p>
+            </li>
+            <li class="step">
+              <h3>Presencial u online</h3>
+              <p>Elige la modalidad que mejor se ajuste a tus horarios.</p>
+            </li>
+          </ol>
+        </div>
+        <figure class="about-figure">
+          <picture>
+            <source type="image/webp" srcset="img/teji-pizarra-480.webp 480w, img/teji-pizarra-900.webp 900w" sizes="(min-width: 64em) 35vw, 100vw">
+            <img src="img/teji-pizarra-900.png" alt="Dos nutrias de Tejiendo Redes junto a una pizarra; una de ellas señala explicando una lección" width="900" height="622" loading="lazy">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Sección 4: Preguntas frecuentes -->
+    <section id="preguntas" class="section" aria-labelledby="titulo-preguntas">
+      <div class="container narrow">
+        <h2 id="titulo-preguntas">Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Las clases son presenciales u online?</summary>
+          <p>Ambas. Puedes venir a nuestro local en Paute o recibir la clase en línea, según te acomode.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto cuestan los servicios?</summary>
+          <p>Cada caso es distinto, así que coordinamos el valor directamente por WhatsApp según el servicio y la frecuencia.</p>
+        </details>
+        <details>
+          <summary>¿Puedo inscribirme a mitad del año lectivo?</summary>
+          <p>Sí. Recibimos estudiantes en cualquier momento y adaptamos el plan a lo que estén viendo en clase.</p>
+        </details>
+        <details>
+          <summary>¿Ayudan con trabajos universitarios?</summary>
+          <p>Sí. Te acompañamos a estructurar ensayos y revisamos la redacción y el formato, explicándote cada cambio para que aprendas en el proceso.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Sección 5: Contacto -->
+    <section id="contacto" class="section section-alt" aria-labelledby="titulo-contacto">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="titulo-contacto">Contacto</h2>
+          <p>Completa el formulario y te abriremos WhatsApp con tu mensaje listo para enviar.</p>
+          <address class="address">
+            <strong>Ubicación:</strong> Paute, Azuay, Ecuador<br>
+            <strong>WhatsApp:</strong> <a href="https://wa.me/593984712983" target="_blank" rel="noopener">098 471 2983<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a><br>
+            <strong>Instagram:</strong> <a href="https://www.instagram.com/tejiendo_redes23/" target="_blank" rel="noopener">@tejiendo_redes23<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+          </address>
+        </div>
+
+        <form id="form-contacto" class="form" novalidate>
+          <p class="form-note">Los campos marcados con <span aria-hidden="true">*</span><span class="visually-hidden">asterisco</span> son obligatorios.</p>
+          <div id="resumen-errores" class="error-summary" tabindex="-1" hidden></div>
+
+          <div class="field">
+            <label for="nombre">Tu nombre <span aria-hidden="true">*</span></label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required minlength="3" aria-describedby="nombre-error">
+            <p class="field-error" id="nombre-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="telefono">Teléfono celular <span aria-hidden="true">*</span></label>
+            <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="numeric" required pattern="09[0-9]{8}" aria-describedby="telefono-ayuda telefono-error">
+            <p class="field-hint" id="telefono-ayuda">10 dígitos, empieza con 09.</p>
+            <p class="field-error" id="telefono-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="servicio">Servicio de interés <span aria-hidden="true">*</span></label>
+            <select id="servicio" name="servicio" required aria-describedby="servicio-error">
+              <option value="">Selecciona una opción</option>
+              <option>Control de tareas</option>
+              <option>Clases personalizadas</option>
+              <option>Creación de ensayos</option>
+              <option>Edición y corrección</option>
+            </select>
+            <p class="field-error" id="servicio-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Cuéntanos un poco más</label>
+            <textarea id="mensaje" name="mensaje" rows="4" maxlength="500"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+          <p id="form-exito" class="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Tejiendo Redes · Centro Psicopedagógico · Desarrollado por Cranel Studios.</p>
+    </div>
+  </footer>
+</body>
+</html>
